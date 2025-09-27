@@ -1,0 +1,91 @@
+# WordPress Core Files
+wp-config.php
+wp-config-sample.php
+
+# WordPress Uploads and Cache
+wp-content/uploads/
+wp-content/cache/
+wp-content/backup*/
+wp-content/backups/
+
+# WordPress Advanced Cache
+wp-content/advanced-cache.php
+
+# WordPress Plugins (except our custom plugin)
+wp-content/plugins/*
+!wp-content/plugins/pdfmaster-integration/
+!wp-content/plugins/index.php
+
+# WordPress Themes (keep only active theme if needed)
+wp-content/themes/
+!wp-content/themes/astra/
+
+# WordPress Core Directories
+wp-admin/
+wp-includes/
+
+# WordPress Core Files (exclude most but keep essential)
+/wp-*.php
+!wp-config-sample.php
+/index.php
+
+# Keep our custom files
+!pdfmaster-download.php
+!.htaccess
+
+# Keep documentation
+!*.md
+
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+logs/
+error_log
+
+# Environment Files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+
+# Documentation and Debug Files
+*.md
+!README.md
+!PDFMASTER_DEBUGGING_CHANGELOG.md
+
+# WordPress Specific
+wp-content/upgrade/
+wp-content/wp-cache-config.php
+sitemap.xml
+*.sql
+*.tar.gz
+*.zip
